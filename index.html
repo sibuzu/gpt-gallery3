@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galley 3</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/design.css?v=1793599797">
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <div>
+        <div class="title-line">
+          <h1>Galley 3</h1>
+          <button class="title-toggle icon-button" id="expandAllToggle" type="button" aria-label="全部展開" title="全部展開">
+            <img src="expand-svgrepo-com.svg" alt="">
+          </button>
+          <p class="meta"><span id="visibleCount">0</span>/<span id="totalCount">0</span> images</p>
+        </div>
+      </div>
+      <select class="category-menu" id="categoryMenu" aria-label="設計分類"></select>
+      <input class="search" id="search" type="search" placeholder="搜尋檔名或分類">
+    </div>
+    <nav class="filters" id="filters" aria-label="設計分類"></nav>
+  </header>
+
+  <main>
+    <section class="grid" id="grid" aria-live="polite"></section>
+    <p class="empty" id="empty">沒有符合條件的圖片</p>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <button class="close" id="close" type="button" aria-label="關閉">×</button>
+    <figure>
+      <img id="preview" alt="">
+      <figcaption id="previewCaption"></figcaption>
+    </figure>
+  </div>
+  <script src="scripts/design-data.js?v=1793599797" defer></script>
+</body>
+</html>
